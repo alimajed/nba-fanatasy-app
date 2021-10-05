@@ -173,6 +173,7 @@ def insert_players_stats(df):
         minutes = (playing_time.minute + playing_time.second/60) if playing_time else 0.0
         player_stats = PlayersStatsModel(
             game_id=try_parse_int(record["GAME_ID"]),
+            team_id=try_parse_int(record["TEAM_ID"]),
             player_id=try_parse_int(record["PLAYER_ID"]),
             start_position=str(record["START_POSITION"]),
             comment=str(record["COMMENT"]),

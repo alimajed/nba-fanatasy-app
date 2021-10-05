@@ -45,7 +45,7 @@ this is a forked project that delivers nba data via rest api.
      ./bootstrap.sh sync-games --season=<yyyy-yy> --start-date=<mm/dd/yyyy> --end-date=<mm/dd/yyyy>
     ```
 - this command will get teams and players stats data from a given season
-- season start and end date is to face any break during the process because nba stats api endpoint may brea, so you can re-run the cmd by mofiying the enddate where it was stopped
+- season start and end date is to face any break during the process because nba stats api endpoint may break, so you can re-run the cmd by mofiying the enddate where it was stopped
 
 ## Why SQL database
 A lot of the operations done with Pandas can be done more easily with SQL, this includes filtering a dataset, selecting specific columns for display, applying a function to a values, and so on, plus SQL has the advantage of having an optimizer and data persistence.

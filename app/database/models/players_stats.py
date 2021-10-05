@@ -33,5 +33,8 @@ class PlayersStatsModel(BaseModel):
     game_id = Column(Integer, ForeignKey("game.id"))
     game = relationship("GameModel", backref="players_stats")
 
+    team_id = Column(Integer, ForeignKey("team.id"))
+    team = relationship("TeamModel", backref="players_stats")
+
     player_id = Column(Integer, ForeignKey("player.id"))
     player = relationship("PlayerModel", backref="players_stats")
